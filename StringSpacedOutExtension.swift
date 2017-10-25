@@ -31,7 +31,7 @@ import Foundation
 
 extension String {
     /// Produce a string with all characters of the `String` interleaved by spaces.
-    var spacedOut : String {
-        return characters.map( { "\($0)" } ).joined(separator: " ")
+    var spacedOut: String {
+        return map( { String($0) } ).joined(separator: " ")
     }
 }
